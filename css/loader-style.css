@@ -29,14 +29,18 @@ http://codepen.io/pawelqcm/pen/dMqrqd
 .loaded #loader {
     opacity: 0;
     -webkit-transition: all 5s ease-out;
+    -o-transition: all 5s ease-out;
     transition: all 5s ease-out;
 }
 
 .loaded #loader-wrapper {
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: visibility 0s 20s, opacity 2s linear;
+    -o-transition: visibility 0s 20s, opacity 2s linear;
     transition: visibility 0s 20s, opacity 2s linear;
     -webkit-transition: all 0.3s 0.6s ease-out;
+    -o-transition: all 0.3s 0.6s ease-out;
     transition: all 0.3s 0.6s ease-out;
 }
 
@@ -61,7 +65,6 @@ http://codepen.io/pawelqcm/pen/dMqrqd
     background-color: transparent;
     border-left: .25em solid whitesmoke;
     -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
@@ -85,10 +88,10 @@ http://codepen.io/pawelqcm/pen/dMqrqd
     border: .25em solid whitesmoke;
     border-radius: 15%;
     -webkit-transform: translate(0, -1em) rotate(-45deg);
-    -moz-transform: translate(0, -1em) rotate(-45deg);
     -ms-transform: translate(0, -1em) rotate(-45deg);
     transform: translate(0, -1em) rotate(-45deg);
-    animation: push 2.5s cubic-bezier(.79, 0, .47, .97) infinite;
+    -webkit-animation: push 2.5s cubic-bezier(.79, 0, .47, .97) infinite;
+            animation: push 2.5s cubic-bezier(.79, 0, .47, .97) infinite;
 }
 
 @-webkit-keyframes push {
@@ -127,110 +130,49 @@ http://codepen.io/pawelqcm/pen/dMqrqd
     }
 }
 
-@-moz-keyframes push {
-    0% {
-        -moz-transform: translate(0, -1em) rotate(-45deg);
-    }
-    5% {
-        -moz-transform: translate(0, -1em) rotate(-50deg);
-    }
-    20% {
-        -moz-transform: translate(1em, -2em) rotate(47deg);
-    }
-    25% {
-        -moz-transform: translate(1em, -2em) rotate(45deg);
-    }
-    30% {
-        -moz-transform: translate(1em, -2em) rotate(40deg);
-    }
-    45% {
-        -moz-transform: translate(2em, -3em) rotate(137deg);
-    }
-    50% {
-        -moz-transform: translate(2em, -3em) rotate(135deg);
-    }
-    55% {
-        -moz-transform: translate(2em, -3em) rotate(130deg);
-    }
-    70% {
-        -moz-transform: translate(3em, -4em) rotate(217deg);
-    }
-    75% {
-        -moz-transform: translate(3em, -4em) rotate(220deg);
-    }
-    100% {
-        -moz-transform: translate(0, -1em) rotate(-225deg);
-    }
-}
-
-@-ms-keyframes push {
-    0% {
-        -ms-transform: translate(0, -1em) rotate(-45deg);
-    }
-    5% {
-        -ms-transform: translate(0, -1em) rotate(-50deg);
-    }
-    20% {
-        -ms-transform: translate(1em, -2em) rotate(47deg);
-    }
-    25% {
-        -ms-transform: translate(1em, -2em) rotate(45deg);
-    }
-    30% {
-        -ms-transform: translate(1em, -2em) rotate(40deg);
-    }
-    45% {
-        -ms-transform: translate(2em, -3em) rotate(137deg);
-    }
-    50% {
-        -ms-transform: translate(2em, -3em) rotate(135deg);
-    }
-    55% {
-        -ms-transform: translate(2em, -3em) rotate(130deg);
-    }
-    70% {
-        -ms-transform: translate(3em, -4em) rotate(217deg);
-    }
-    75% {
-        -ms-transform: translate(3em, -4em) rotate(220deg);
-    }
-    100% {
-        -ms-transform: translate(0, -1em) rotate(-225deg);
-    }
-}
-
 @keyframes push {
     0% {
-        transform: translate(0, -1em) rotate(-45deg);
+        -webkit-transform: translate(0, -1em) rotate(-45deg);
+                transform: translate(0, -1em) rotate(-45deg);
     }
     5% {
-        transform: translate(0, -1em) rotate(-50deg);
+        -webkit-transform: translate(0, -1em) rotate(-50deg);
+                transform: translate(0, -1em) rotate(-50deg);
     }
     20% {
-        transform: translate(1em, -2em) rotate(47deg);
+        -webkit-transform: translate(1em, -2em) rotate(47deg);
+                transform: translate(1em, -2em) rotate(47deg);
     }
     25% {
-        transform: translate(1em, -2em) rotate(45deg);
+        -webkit-transform: translate(1em, -2em) rotate(45deg);
+                transform: translate(1em, -2em) rotate(45deg);
     }
     30% {
-        transform: translate(1em, -2em) rotate(40deg);
+        -webkit-transform: translate(1em, -2em) rotate(40deg);
+                transform: translate(1em, -2em) rotate(40deg);
     }
     45% {
-        transform: translate(2em, -3em) rotate(137deg);
+        -webkit-transform: translate(2em, -3em) rotate(137deg);
+                transform: translate(2em, -3em) rotate(137deg);
     }
     50% {
-        transform: translate(2em, -3em) rotate(135deg);
+        -webkit-transform: translate(2em, -3em) rotate(135deg);
+                transform: translate(2em, -3em) rotate(135deg);
     }
     55% {
-        transform: translate(2em, -3em) rotate(130deg);
+        -webkit-transform: translate(2em, -3em) rotate(130deg);
+                transform: translate(2em, -3em) rotate(130deg);
     }
     70% {
-        transform: translate(3em, -4em) rotate(217deg);
+        -webkit-transform: translate(3em, -4em) rotate(217deg);
+                transform: translate(3em, -4em) rotate(217deg);
     }
     75% {
-        transform: translate(3em, -4em) rotate(220deg);
+        -webkit-transform: translate(3em, -4em) rotate(220deg);
+                transform: translate(3em, -4em) rotate(220deg);
     }
     100% {
-        transform: translate(0, -1em) rotate(-225deg);
+        -webkit-transform: translate(0, -1em) rotate(-225deg);
+                transform: translate(0, -1em) rotate(-225deg);
     }
 }
