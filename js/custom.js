@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$().ready(function() {
         //loader removal
     setTimeout(function(){
         // navigation click actions

@@ -95,7 +95,10 @@
 </footer>
 
 <script  type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
-<script type="text/javascript" src="js/custom.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){setTimeout(function(){$("#loader-wrapper").remove()},1E3);$(".scroll-link").on("click",function(a){a.preventDefault();a=$(this).attr("data-id");a=$("#"+a).offset().top-50;var b=$("#main-nav");$("html,body").animate({scrollTop:a},750);b.hasClass("open")&&(b.css("height","1px").removeClass("in").addClass("collapse"),b.removeClass("open"))});$(".scroll-top").on("click",function(a){a.preventDefault();$("html, body").animate({scrollTop:0},"slow")});$("#nav-toggle").on("click",
+function(a){a.preventDefault();$("#main-nav").toggleClass("open")});setTimeout(function(){$("body").addClass("loaded")});"undefined"===typeof console&&(console={log:function(){}});$(document).on("click",function(){$(".collapse").collapse("hide")})});
+</script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 
