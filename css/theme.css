@@ -6,7 +6,6 @@
     src: url('jaapokki-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/jaapokki-regular.woff') format('woff'), url('../fonts/jaapokki-regular.ttf') format('truetype')
 }
 
-
 /*!
  * Bootstrap v3.0.0
  *
@@ -2799,9 +2798,6 @@ a.btn.btn-primary {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-
 }
 
 .text-danger,
